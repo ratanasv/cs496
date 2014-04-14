@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Homework II - CS496 - Viriya Ratanasangpunth</title>
+<link rel='stylesheet' type='text/css' href=style.css>
+<link rel='stylesheet' href='http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css'/>
+<script src='http://code.jquery.com/jquery-1.8.2.min.js'></script>
+<script type='text/javascript'>
+	var items = [
+		{
+			"name":"Oregon State University",
+			"image":"http://oregonstate.edu/osuhomepage/regions/top-hat/current/images/osu-tag.png"
+		},
+		{
+			"name":"University of Oregon",
+			"image":"https://uoregon.edu/sites/uoregon2.wc-www.uoregon.edu/themes/uo_homesite/logo.png"
+		},
+		{
+			"name":"Portland State University",
+			"image":"http://www.pdx.edu/sites/all/themes/pdx_home/logo.png"
+		},
+		{
+			"name":"Southern Oregon University",
+			"image":"http://www.sou.edu/templates/souhometemplate1/css/img/logo-reversed.png"
+		}
+	];
+</script>
+<script>
+function populateTable() {
+	var table = $('#container');
+	for (var i=0; i<items.length; i++) {
+		table.append('<div class="row">');
+		table.append('<div class="left"> <p>' + items[i].name + '</p> </div>');
+		table.append('<div class="right" <p> <img src="' + items[i].image + '" width="160" height="160" </p> </div>');
+		table.append('</div>');
+	}
+}
+</script>
+</head>
+<body>
+<h2>Viriya Ratanasangpunth</h2>
+<button type='button' onclick='populateTable()'>Populate Table</button>
+<div id='container'>
+
+
+</div>
+</body>
+
+</html>

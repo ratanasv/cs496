@@ -1,0 +1,13 @@
+#container {
+	display: table;
+}
+
+.row  {
+	display: table-row;
+}
+
+.left, .right {
+	display: table-cell;
+	padding:10px;
+	border: 1px solid black;
+}
